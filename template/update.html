@@ -1,0 +1,68 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Department Management System</title>
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <style>
+      /* Custom Styling */
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa; /* Light gray background */
+      }
+
+      .form-container {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      .btn1 a {
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .btn1 a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container form-container">
+      <h1 class="text-center mb-4">Department Management System</h1>
+      <div class="btn1 text-center">
+        <a href="/add">Create Department</a>
+      </div>
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="Department" class="form-label">Department Name</label>
+          <input type="text" class="form-control" id="Department" name="Department" placeholder="Enter department name">
+        </div>
+        <div class="mb-3">
+          <label for="Descriptions" class="form-label">Descriptions</label>
+          <input type="text" class="form-control" name="Discriptions" id="Descriptions" placeholder="Enter descriptions">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Edit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
+</html>

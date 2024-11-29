@@ -1,0 +1,107 @@
+<!-- {% load static %} -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> -->
+     <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: #343a40; /* Dark background */
+            color: #ffffff;
+            height: 100vh; /* Full height */
+            padding: 15px;
+            position: sticky; /* Fixed scrolling */
+            top: 0;
+        }
+
+        .sidebar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057; /* Lighter shade for hover */
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h2 class="text-center mb-4">Dashboard</h2>
+                <a href="#overview">Overview</a>
+                <a href="#departments">Departments</a>
+                <a href="#users">Users</a>
+                <a href="#settings">Settings</a>
+                <a href="#logout">Logout</a>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 content">
+                <div class="header">Welcome to the Dashboard</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Departments</h5>
+                                <p class="card-text">Manage and view departments.</p>
+                                <a href="#departments" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Users</h5>
+                                <p class="card-text">Manage user accounts and profiles.</p>
+                                <a href="#users" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Settings</h5>
+                                <p class="card-text">Configure your account and preferences.</p>
+                                <a href="#settings" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript link -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
