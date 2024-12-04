@@ -10,8 +10,8 @@ A web-based application built with Django that allows users to manage department
 - **Delete Department**: Soft delete departments by marking them inactive.
 
 ## Prerequisites
-- Python  version -3.12
-- Django 4.x or above
+- Python 3.12
+- Django 5.1.1 or above
 - Mysql 
 
 ## Installation
@@ -110,10 +110,10 @@ The `Department` model includes the following fields:
 ## Technologies Used
 - **Backend**: Django
 - **Frontend**: HTML, CSS, Bootstrap
-- **Database**: SQLite
+- **Database**: mysql
 
 ## Author
-- [Your Name](https://github.com/your-username)
+-Abhishek Nishad (https://github.com/anishad6)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
